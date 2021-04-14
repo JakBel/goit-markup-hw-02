@@ -1,6 +1,13 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --main-color: #212121; 
+    --secondary-color: #2F303A
+}
+
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    color: #212121; 
+    font-family: var(--main-font);
+    color: var(--main-font);
 }
 
 /* ==== Global ==== */
@@ -25,7 +32,7 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: var(--secondary-font);
     color:#212121;
     font-weight: bold;
     font-size: 26px;
@@ -36,7 +43,7 @@ body {
 }
 .logo-studio-footer {
     color: #FFF;
-    background: #2F303A;
+    background: var(--secondary-color);
 }
 
 .navigation {
@@ -46,6 +53,15 @@ body {
 .navigation:focus {
     color: #2196F3;
 }
+
+.decoration {
+    text-decoration: none;
+}
+
+.block-background {
+    background-color: var(--secondary-color);
+}
+
 /* ==== END Global ==== */
 
 
@@ -66,7 +82,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFF;
-    background: #2F303A;
 }
 /* ==== END Header ==== */
 
@@ -126,7 +141,7 @@ body {
 /* ==== Footer === */
 .contacts-footer {
     color: #FFF;
-    background: #2F303A;
+    background: var(--secondary-color);
 }
 .contacts-footer:hover,
 .contacts-footer:focus {
